@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="side.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ZOZO TOWN BACK OFFICE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="nav-radio custom-control-label" for="customRadioInline1">Product</label>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                            class="custom-control-input">
+                        <label class="nav-radio custom-control-label" for="customRadioInline1">Child shelf
+                            number</label>
+                    </div>
+                </li>
+                <!-- <form class="form-inline my-2 my-sm-0">
+                <div class="input-group">
+                    <input type="text" class="no-border form-control form-control-sm bg-secondary">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary btn-sm" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                  </div>
+              </form> -->
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Mityoshi Son</a>
+                </li>
+                <li class="nav-link">
+                    <div id="ex4">
+                        <i class="fa fa-bell-o" style="font-size:24px" data-count="4b"></i>
+                        <span class="notif badge badge-danger">four</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav2 navbar navbar-expand-sm bg-secondary navbar-dark">
+        <ul class="navbar-nav">
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Product Management
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Logistic Management
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Inventory Control
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Customer and order management
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Accounting/Settlement
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Analysis
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Report
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Site Management
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    Master Management
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                    System
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul class="list-group list-group-flush">
+                <li class="nav-item">
+                    <a href="#" class="hd nav-link">Home</a>
+                    <ul class="sub list-group list-group-flush">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Items</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="container-fluid">
+                    <p class="table-label">Store shelf <span><i class="fa fa-angle-down" style="font-size:24px"></i></span></p>
+                <table class="table table-sm">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>Shop</td>
+                            <td colspan="3">
+                                <div class="input-group">
+                                    <input type="text" aria-label="Small">
+                                    <button class="btn btn-sm btn-primary">Clear</button>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Category
+                            </td>
+                            <td colspan="3">
+
+
+                                <select id="inputState" class="">
+                                    <option selected>unspecified</option>
+                                    <option>...</option>
+                                </select>
+                                <select id="inputState" class="">
+                                    <option selected>unspecified</option>
+                                    <option>...</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Product Code
+                            </td>
+                            <td>
+                                <input type="text" aria-label="Small">
+                            </td>
+                            <td>
+                                Type
+                            </td>
+                            <td>
+                                <select class="d-block" id="inputState" class="">
+                                    <option selected>unspecified</option>
+                                    <option>...</option>
+                                </select>
+                                <select class="d-block" id="inputState" class="">
+                                    <option selected>unspecified</option>
+                                    <option>...</option>
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Product Name
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <input type="text" aria-label="Small">
+                                </div>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Partial Match</label>
+                            </td>
+                            <td>Brand Part Number</td>
+                            <td>
+                                    <div class="input-group">
+                                            <input type="text" aria-label="Small">
+                                        </div>
+                                        <input type="checkbox" name="" id="">
+                                        <label for="">Partial Match</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                Sex
+                            </td>
+                            <td rowspan="2">
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">unspecified</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">MEN</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">WOMEN</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">KIDS</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">HOME</label>
+                            </td>
+                                
+                            <td>Secondary Gender</td>
+                            <td>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">unspecified</label>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">MEN</label>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">WOMEN</label>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">KIDS</label>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">HOME</label>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                                <td>
+                                   KIDS GENDER
+                                </td>
+                                <td>
+                                        <input type="checkbox" name="sex" id="">
+                                        <label for="">BOYS</label>
+                                        <input type="checkbox" name="sex" id="">
+                                        <label for="">GIRLS</label>
+                                        
+                                </td>
+                            </tr>
+                        <tr>
+                            <td>
+                                Available Number
+                            </td>
+                            <td colspan="3">
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">unspecified</label>
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    <input type="radio"  name="sex" id="">
+                                    <label for="">Pieces</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">That's all</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">Less Than</label>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">Quantity Indication</label>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    Available Number
+                                </td>
+                                <td colspan="3">
+                                        <input type="radio" name="sex" id="">
+                                        <label for="">unspecified</label>
+                                        <input type="text" class="avail-num" value="0" name="" id="">
+                                        <input type="radio"  name="sex" id="">
+                                        <label for="">Pieces</label>
+                                        <input type="radio" name="sex" id="">
+                                        <label for="">That's all</label>
+                                        <input type="radio" name="sex" id="">
+                                        <label for="">Less Than</label>
+                                        <input type="checkbox" name="sex" id="">
+                                        <label for="">Quantity Indication</label>
+                                </td>
+                            </tr>
+                        
+                        <tr>
+                            <td>
+                                Web Display
+                            </td>
+                            <td>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">unspecified</label>
+                                    <input type="radio"  name="sex" id="">
+                                    <label for="">Showing</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">Hidden</label>
+                            </td>
+                            <td>
+                                Other
+                            </td>
+                            <td>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">There are recommended settings</label>
+                                    <input type="checkbox"  name="sex" id="">
+                                    <label for="">With Advertisment Setting</label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Sales Type
+                            </td>
+                            <td>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">Normal</label>
+                                    <input type="radio"  name="sex" id="">
+                                    <label for="">Reservation</label>
+                                    <input type="radio" name="sex" id="">
+                                    <label for="">Not Sold</label>
+                            </td>
+                            <td>
+                                Price Type
+                            </td>
+                            <td>
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">Normal</label>
+                                    <input type="checkbox"  name="sex" id="">
+                                    <label for="">Sale</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Selling Price
+                            </td>
+                            <td colspan="3">
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">Specified</label>
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    Yen To
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    <label for="">Circle</label>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sales Date
+                            </td>
+                            <td colspan="3">
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">Specified</label>
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    To
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Registration Date
+                            </td>
+                            <td colspan="3">
+                                    <input type="checkbox" name="sex" id="">
+                                    <label for="">Specified</label>
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    To
+                                    <input type="text" class="avail-num" value="0" name="" id="">
+                                    
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                Display Specification
+                            </td>
+                            <td colspan="3">
+                                sort:<input type="radio" name="sex" id="">
+                                <label for="">Sales Date</label>
+                                <input type="radio" name="sex" id="">
+                                <label for="">Registration Date</label>
+                                <input type="radio" name="sex" id="">
+                                <label for="">Category</label>
+                                <input type="radio" name="sex" id="">
+                                <label for="">Product Name</label>
+                                <input type="radio" name="sex" id="">
+                                <label for="">Brand Part Number</label>
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+                                <td colspan="3">
+                                        Number:<input type="radio" name="sex" id="">
+                                        <label for="">50 cases</label>
+                                        <input type="radio" name="sex" id="">
+                                        <label for="">Unspecified</label>
+                                    </td>
+                        </tr>
+                        <tr>
+                                <td colspan="3">
+                                        
+                                        Target:<input type="radio" name="sex" id="">
+                                        <label for="">Active Product</label>
+                                        <input type="radio" name="sex" id="">
+                                        <label for="">Archive </label>
+                                    </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

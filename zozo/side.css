@@ -1,0 +1,93 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%
+    
+}
+.content{
+    margin: 20px 0px;
+}
+
+.table-label
+{
+    padding: 10px 0px;
+    display: block;
+}
+.sidebar
+{
+    min-width: 220px;
+    min-height: 220px;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    position: relative;
+}
+.sub
+{
+    padding-left:10px
+}
+.nav-link
+{
+    color: rgb(63, 63, 63)
+}
+.hd{
+    background-color: rgb(223, 223, 223)
+}
+.content
+{
+    display: flex;
+    
+}
+table
+{
+    background-color:red
+
+}
+table,td,tr{
+    border:1px solid rgb(143, 143, 143)
+}
+tr td:first-child
+{
+    background-color: rgb(189, 189, 189)
+}
+td{
+    font-size:13px
+}
+input[type=text],select
+{
+    height: 25px;
+    padding-right: 50px;
+    margin-right:20px
+}
+select,p,label{
+    display: inline;
+}
+select{
+    width: 200px
+}
+.d-block{
+    display: block
+}
+.avail-num{
+    width: 70px
+}
+input[type=radio]
+{
+    margin: 0px 5px;
+}
+
+
+.nav-radio{
+    color:#fff
+}
+.nav-input .no-border{
+    border:0px solid
+}
+.notif{
+    margin-left:-10px;
+}
+.nav2 a
+{
+    font-size: 13px
+}
